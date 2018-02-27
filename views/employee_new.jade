@@ -1,0 +1,19 @@
+extends layout
+
+block content
+    h1= title
+    div.newemployee
+        form( method="post")
+            div
+                div
+                    span.label Tipo :
+                    input(type="text", name="tipo", id="editEmployeeTipo")
+                div
+                    span.label Num :
+                    input(type="text", name="num", id="editEmployeeNum")
+                div
+                    span.label Name :
+                    input(type="text", name="name", id="editEmployeeName")
+                div#editEmployeeSubmit
+                    input(type="submit", value="Save")
+        a(href="/")!= "Regresar"
